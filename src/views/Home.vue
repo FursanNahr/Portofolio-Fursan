@@ -1,4 +1,7 @@
 <template>
+  <!-- RemixIcon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- HEADER -->
   <header class="header" id="header">
     <nav class="nav container">
@@ -24,14 +27,13 @@
 
         <!-- Close button -->
         <div class="nav__close" id="nav-close">
-
+          <i class="ri-close-large-line"></i>
         </div>
-
-        <!-- Toggle button -->
-         <div class="toggle__button" id="toggle-button">
-
-         </div>
       </div>
+        <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+         </div>
     </nav>
   </header>
 
@@ -152,6 +154,21 @@ img {
   gap: 1.5rem;
 }
 
+.section {
+  padding-block: 5rem 2rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 2rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
 /* Header & Nav */
 .header {
   position: fixed;
@@ -173,4 +190,73 @@ img {
   font-weight: var(--font-bold);
 }
 
+.nav__toggle,
+.nav__close {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(var(--hue), 70%, 4%, .2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 7rem 3rem;
+    transition: right .4s;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.nav__link {
+  position: relative;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.nav__link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--first-color-light);
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  transition: width .3s;
+}
+
+.nav__link:hover {
+  color: var(--first-color-light);
+}
+
+.nav__link:hover::after {
+  width: 30%;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem
+}
 </style>
+<script>
+export default {
+  components: {
+  },
+  data() {
+    return {
+    };
+  },
+};
+</script>
