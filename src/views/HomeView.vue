@@ -7,38 +7,42 @@
       <div>
         <div class="text-li">
           <div class="a">
-            <RouterLink class="a-nav" to="/">Home</RouterLink>
-            <div class="hover-nav"></div>
+            <a href="#home" class="hover-line">Home</a>
           </div>
           <div class="a">
-            <RouterLink class="a-nav" to="/">Work</RouterLink>
-            <div class="hover-nav"></div>
+            <a href="#work" class="hover-line">Work</a>
           </div>
           <div class="a">
-            <RouterLink class="a-nav" to="/">My Info</RouterLink>
-            <div class="hover-nav"></div>
+            <a href="#info" class="hover-line">My Info</a>
           </div>
           <div class="a">
-            <RouterLink class="a-nav" to="/">Service</RouterLink>
-            <div class="hover-nav"></div>
+            <a href="#service" class="hover-line">Service</a>
           </div>
           <div class="a">
-            <RouterLink class="a-nav" to="/">Contact Me</RouterLink>
-            <div class="hover-nav"></div>
+            <a href="#contact" class="hover-line">Contact</a>
           </div>
         </div>
       </div>
     </nav>
+
+    <div class="container-foto-nama">
+      <div>
+        <div>Fursan Nahr</div>
+        <div>Front-End Developer</div>
+      </div>
+      <div>
+        <img src="../assets/images/fotoukur.png" alt="">
+      </div>
+    </div>
   </div>
 </template>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
 body {
   background-color: #101010;
   color: white;
-  font-family: "Poppins";
+  font-family: "Syne";
 }
 
 nav {
@@ -67,22 +71,62 @@ nav>div:nth-child(2) {
   width: 1vw;
 }
 
-.a-nav {
-  color: white;
-  text-decoration: none;
-}
-.a-nav:hover {
-  color: #ff6205;
-  transition: color 1s;
-}
-.a:hover .hover-nav {
-  width: 2vw;
-  height: 0.15vw;
-  background-color: #ff6205; 
-}
 .logo {
   margin: 0 auto;
   height: 4vw;
   width: fit-content;
+}
+
+
+
+.hover-line {
+  position: relative;
+  padding-bottom: 0.4vw;
+  color: white;
+  font-size: 1.2vw;
+  text-decoration: none;
+}
+
+.hover-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.15vw;
+  background-color: #f95b04;
+  transition: width 0.3s ease-out;
+}
+
+.hover-line:hover {
+  color: #f95b04;
+  transition: 0.3s ease-out;
+}
+
+.hover-line:hover::after {
+  width: 30%;
+}
+.container-foto-nama {
+  display: flex;
+  margin: 10vw auto 0 auto;
+  width: fit-content;
+  align-items: center;
+}
+.container-foto-nama img{
+  height: 30vw;
+}
+.container-foto-nama div div:first-child {
+  font-size: 5vw;
+  font-weight: 700;
+  width: 50%;
+  line-height: 5vw;
+  color: #ff5f00;
+}
+.container-foto-nama div div:last-child {
+  font-size: 3vw;
+  font-weight: 600;
+}
+.container-foto-nama div:first-child {
+  padding-right: 5vw;
 }
 </style>
