@@ -1,6 +1,8 @@
 <template>
   <!-- RemixIcon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- HEADER -->
   <header class="header" id="header">
@@ -30,18 +32,67 @@
           <i class="ri-close-large-line"></i>
         </div>
       </div>
-        <!-- Toggle button -->
-         <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
-         </div>
+      <!-- Toggle button -->
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
     </nav>
   </header>
 
-  <main></main>
+  <main>
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <img src="../assets/images/fotoukur.png" alt="" class="home__img">
+
+        <div class="home__data">
+          <h1 class="home__name">Fursan <br> Nahr</h1>
+          <h3 class="home__profession">Web Developer</h3>
+        </div>
+
+        <a href="#work" class="home__scroll">
+          <div class="home__scroll-box">
+            <i class="ri-arrow-down-line"></i>
+          </div>
+
+          <span class="home__scroll-text">Recent Works</span>
+        </a>
+      </div>
+    </section>
+    <section class="work section" id="work">
+
+    </section>
+    <section class="info section" id="info">
+
+    </section>
+  </main>
 </template>
+<script>
+export default {
+  mounted() {
+    const navMenu = document.getElementById('nav-menu');
+    const navToggle = document.getElementById('nav-toggle');
+    const navClose = document.getElementById('nav-close');
+
+    // Show Menu
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu');
+      });
+    }
+
+    // Close Menu
+    if (navClose) {
+      navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu');
+      });
+    }
+  },
+};
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
 /* Variable CSS */
 :root {
   --header-height: 3.5rem;
@@ -73,9 +124,9 @@
   --font-semi-bold: 600;
   --font-bold: 700;
 
-/* Z Index */
---z-tooltip: 10;
---z-fixed: 100;
+  /* Z Index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 
 @media screen and (min-width: 1550px) {
@@ -121,7 +172,9 @@ textarea {
   outline: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -133,6 +186,7 @@ p {
 ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -178,6 +232,7 @@ img {
   background-color: transparent;
   z-index: var(--z-fixed);
 }
+
 .nav {
   position: relative;
   height: var(--header-height);
@@ -185,6 +240,7 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+
 .nav__logo {
   color: var(--title-color);
   font-weight: var(--font-bold);
@@ -249,14 +305,50 @@ img {
   top: 1rem;
   right: 1.5rem
 }
+
+.show-menu {
+  right: 0;
+}
+
+/* Home */
+.home__container {
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.home__img {
+  width: 220px;
+  justify-self: center;
+  mask-image: linear-gradient(to bottom, hsla(var(--hue), 40%, 16%) 60%, transparent 100%);
+}
+
+.home__name {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  word-break: break-word;
+  margin-bottom: 1rem;
+}
+
+.home__profession {
+  position: relative;
+  font-size: var(--big-font-size);
+  color: var(--text-color);
+}
+
+.home__profession::after {
+  content: '';
+  position: absolute;
+  width: 25%;
+  height: 3px;
+  background-color: var(--text-color);
+  left: 0;
+  bottom: -.5rem;
+}
+
+.home__scroll {
+  color: var(--title-color);
+  display: inline-flex;
+  
+}
+
 </style>
-<script>
-export default {
-  components: {
-  },
-  data() {
-    return {
-    };
-  },
-};
-</script>
