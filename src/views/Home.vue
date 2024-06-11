@@ -5,7 +5,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- HEADER -->
-  <header class="header" id="header">
+  <header :class="{ 'blur-header': isBlurred }" class="header" id="header">
     <nav class="nav container">
       <a href="" class="nav__logo">Ukur</a>
       <div class="nav__menu" id="nav-menu">
@@ -59,7 +59,21 @@
       </div>
     </section>
     <section class="work section" id="work">
+      <h2 class="section__title">
+        RECENT WORK
+      </h2>
+      <div class="work__container container grid">
+        <article class="work__card">
+          <a href="#" target="_blank" class="work__link">
+            <h2 class="work__title">Restaurant Website</h2>
+            <p class="work__description">
+              Short description of the project that was carried out in this portofolio.
+            </p>
 
+            <img src="../assets/images/work1.png" class="work__img" alt="">
+          </a>
+        </article>
+      </div>
     </section>
     <section class="info section" id="info">
 
@@ -68,6 +82,11 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      isBlurred: false,
+    };
+  },
   mounted() {
     const navMenu = document.getElementById('nav-menu');
     const navToggle = document.getElementById('nav-toggle');
@@ -86,6 +105,17 @@ export default {
         navMenu.classList.remove('show-menu');
       });
     }
+
+    // Add Blur Header
+    window.addEventListener('scroll', this.blurHeader);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.blurHeader);
+  },
+  methods: {
+    blurHeader() {
+      this.isBlurred = window.scrollY >= 50;
+    },
   },
 };
 </script>
@@ -310,6 +340,20 @@ img {
   right: 0;
 }
 
+/* Blur Header */
+.blur-header::after {
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(var(--hue), 70%, 4%, .2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /* Home */
 .home__container {
   row-gap: 2rem;
@@ -348,7 +392,43 @@ img {
 .home__scroll {
   color: var(--title-color);
   display: inline-flex;
-  
+  column-gap: .5rem;
+  align-items: center;
+  justify-self: center;
+  margin-top: 3rem;
+}
+
+.home__scroll-box {
+  background-color: var(--first-color);
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.home__scroll-text {
+  font-weight: var(--font-semi-bold);
+}
+
+.home__scroll-box i {
+  animation: scroll-down 3s infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
 }
 
 </style>
