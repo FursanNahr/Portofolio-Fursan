@@ -58,6 +58,7 @@
         </a>
       </div>
     </section>
+
     <section class="work section" id="work">
       <h2 class="section__title">
         RECENT WORK
@@ -71,12 +72,223 @@
             </p>
 
             <img src="../assets/images/work1.png" class="work__img" alt="">
+
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </article>
+
+        <article class="work__card">
+          <a href="#" target="_blank" class="work__link">
+            <h2 class="work__title">Restaurant Website</h2>
+            <p class="work__description">
+              Short description of the project that was carried out in this portofolio.
+            </p>
+
+            <img src="../assets/images/work1.png" class="work__img" alt="">
+
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </article>
+
+        <article class="work__card">
+          <a href="#" target="_blank" class="work__link">
+            <h2 class="work__title">Restaurant Website</h2>
+            <p class="work__description">
+              Short description of the project that was carried out in this portofolio.
+            </p>
+
+            <img src="../assets/images/work1.png" class="work__img" alt="">
+
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </article>
+
+        <article class="work__card">
+          <a href="#" target="_blank" class="work__link">
+            <h2 class="work__title">Restaurant Website</h2>
+            <p class="work__description">
+              Short description of the project that was carried out in this portofolio.
+            </p>
+
+            <img src="../assets/images/work1.png" class="work__img" alt="">
+
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </article>
+
+        <article class="work__card">
+          <a href="#" target="_blank" class="work__link">
+            <h2 class="work__title">Restaurant Website</h2>
+            <p class="work__description">
+              Short description of the project that was carried out in this portofolio.
+            </p>
+
+            <img src="../assets/images/work1.png" class="work__img" alt="">
+
+            <i class="ri-arrow-right-line"></i>
           </a>
         </article>
       </div>
     </section>
     <section class="info section" id="info">
+      <h2 class="section__title">MY INFO</h2>
 
+      <div class="info__container container grid">
+        <!-- ABOUT -->
+        <div class="about grid">
+          <div class="about__content">
+            <h3 class="info__title">About Me</h3>
+            <p class="about__description">
+              Passionate About Creating <b>Websites with beautiful interface</b>. I have years of experience in <b>Web
+                Development</b> with several projects completed.
+            </p>
+
+            <a href="../assets/text/CV_Fursan Nahr.pdf" download="" target="_blank"
+              class="button about__button">Download CV</a>
+          </div>
+
+          <img src="../assets/images/fotoukur.png" alt="" class="about__img">
+        </div>
+
+        <!-- Experience -->
+        <div class="experience">
+          <h3 class="info__title">Experience</h3>
+
+          <div class="experience__content grid">
+            <div class="experience__data grid">
+              <h2 class="experience__company grid">Discord</h2>
+
+              <div>
+                <h3 class="experience__profession">Web Product Designer</h3>
+                <span class="experience__date">05/23 - Present</span>
+                <p class="experience__description">
+                  Short description of the work you do or did in the company
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__data grid">
+              <h2 class="experience__company grid">Google</h2>
+
+              <div>
+                <h3 class="experience__profession">Web Developer</h3>
+                <span class="experience__date">05/23 - Present</span>
+                <p class="experience__description">
+                  Short description of the work you do or did in the company
+                </p>
+              </div>
+            </div>
+
+            <div class="experience__data grid">
+              <h2 class="experience__company grid">Adobe</h2>
+
+              <div>
+                <h3 class="experience__profession">Web Designer</h3>
+                <span class="experience__date">05/23 - Present</span>
+                <p class="experience__description">
+                  Short description of the work you do or did in the company
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <h3 class="info__title">Skills</h3>
+
+          <div class="skills__content grid">
+
+            <div class="skills__box">
+              <img src="../assets/images/HTML-5-Badge-Logo.png" alt="" class="skills__img">
+              <span class="skills__name">HTML</span>
+            </div>
+
+            <div class="skills__box">
+              <img src="../assets/images/css.png" alt="" class="skills__img">
+              <span class="skills__name">CSS</span>
+            </div>
+            <div class="skills__box">
+              <img src="../assets/images/scss.png" alt="" class="skills__img">
+              <span class="skills__name">SCSS</span>
+            </div>
+
+            <div class="skills__box">
+              <img src="../assets/images/bootstrap.png" alt="" class="skills__img">
+              <span class="skills__name">Bootstrap</span>
+            </div>
+
+            <div class="skills__box">
+              <img src="../assets/images/vue.png" alt="" class="skills__img">
+              <span class="skills__name">Vue JS</span>
+            </div>
+
+            <div class="skills__box">
+              <img src="../assets/images/github.png" alt="" class="skills__img">
+              <span class="skills__name">Github</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <h2 class="section__title">SERVICE</h2>
+
+      <div class="services__container container grid">
+
+        <article class="services__card">
+          <i class="ri-code-box-line services__icon"></i>
+
+          <h3 class="services__title">Web Development</h3>
+          <p class="services__description">
+            Short description of the service offered to users
+            to obtain a personalized project.
+          </p>
+        </article>
+
+        <article class="services__card">
+          <i class="ri-layout-2-line services__icon"></i>
+
+          <h3 class="services__title">Responsive Web Design</h3>
+          <p class="services__description">
+            Short description of the service offered to users
+            to obtain a personalized project.
+          </p>
+        </article>
+
+        <article class="services__card">
+          <i class="ri-seo-line services__icon"></i>
+
+          <h3 class="services__title">Seo (Web Pages)</h3>
+          <p class="services__description">
+            Short description of the service offered to users
+            to obtain a personalized project.
+          </p>
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <h2 class="section__title">CONTACT ME</h2>
+
+      <div class="contact__container container grid">
+        <form action="" class="contact__form grid" id="contact-form">
+          <div class="contact__group grid">
+            <input type="text" placeholder="Names" required class="contact__input" name="" id="">
+            <input type="email" placeholder="Email" required class="contact__input" name="" id="">
+          </div>
+
+          <textarea name="" placeholder="Message" required class="contact__input contact__area" id=""></textarea>
+
+          <button type="submit" class="button contact__button">Send Messages</button>
+
+          <p class="contact__message" id="contact-message"></p>
+        </form>
+
+        
+      </div>
     </section>
   </main>
 </template>
@@ -421,14 +633,188 @@ img {
     transform: translateY(-1rem);
     opacity: 0;
   }
+
   50% {
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     transform: translateY(1rem);
     opacity: 0;
   }
 }
 
+/* Scroll */
+.work {
+  background-color: var(--container-color);
+}
+
+.work__card {
+  background-color: var(--first-color);
+}
+
+.work__link {
+  display: block;
+  position: relative;
+  background-color: var(--body-color);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  color: var(--text-color);
+  transition: transform .4s;
+}
+
+.work__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
+
+.work__description {
+  margin-bottom: 1.5rem;
+}
+
+.work__link i {
+  position: absolute;
+  top: 1.8rem;
+  right: 1.5em;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  transition: transform .4s;
+}
+
+.work__link:hover {
+  transform: translateY(-.35rem);
+}
+
+.work__link:hover i {
+  transform: translateX(.5rem);
+}
+
+/* INFO */
+
+.info__container {
+  row-gap: 3rem;
+}
+
+.info__title {
+  position: relative;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.info__title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  width: 20px;
+  height: 2px;
+  background-color: var(--text-color);
+}
+
+/* ABOUT */
+.about {
+  row-gap: 3rem;
+}
+
+
+.about__description {
+  margin-bottom: 2rem;
+}
+
+.about__description b {
+  color: var(--first-color-light);
+}
+
+.about__button {
+  width: 100%;
+}
+
+.about__img {
+  width: 250px;
+  justify-self: center;
+  mask-image: linear-gradient(to bottom, hsla(var(--hue), 40%, 16%) 60%, transparent 100%);
+}
+
+/* BUTTON */
+.button {
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 2rem;
+  transition: background-color .4s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+/* Experience */
+.experience__content {
+  row-gap: 2rem;
+}
+
+.experience__data {
+  row-gap: 1rem;
+}
+
+.experience__company {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+}
+
+.experience__profession {
+  font-size: var(--h3-font-size);
+  margin-bottom: .25rem;
+}
+
+.experience__date {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: .75rem;
+}
+
+/* Skills */
+.skills__img {
+  width: 35px;
+}
+
+.skills__name {
+  font-size: var(--small-font-size);
+}
+
+.skills__content {
+  grid-template-columns: repeat(3, max-content);
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.skills__box {
+  display: grid;
+  place-items: center;
+  transition: transform .4s;
+}
+
+.skills__box:hover {
+  transform: translateY(-.25rem);
+}
+
+/* Services */
+.services {
+  background-color: var(--container-color);
+}
+.services__container {
+  row-gap: 2rem;
+}
+.services__icon {
+  display: block;
+  color: var(--first-color-light);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.services__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem
+}
 </style>
