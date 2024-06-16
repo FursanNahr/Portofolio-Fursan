@@ -46,7 +46,7 @@
 
         <div class="home__data">
           <h1 class="home__name">Fursan <br> Nahr</h1>
-          <h3 class="home__profession">Web Developer</h3>
+          <h3 class="home__profession">Front-End Developer</h3>
         </div>
 
         <a href="#work" class="home__scroll">
@@ -65,10 +65,10 @@
       </h2>
       <div class="work__container container grid">
         <article class="work__card">
-          <a href="#" target="_blank" class="work__link">
-            <h2 class="work__title">Restaurant Website</h2>
+          <a href="https://ajibtest.online/" target="_blank" class="work__link">
+            <h2 class="work__title">Absensi SMK 4 Website</h2>
             <p class="work__description">
-              Short description of the project that was carried out in this portofolio.
+              29/2/24 <br> becomes the front-end of the Absensi SMK 4 website
             </p>
 
             <img src="../assets/images/work1.png" class="work__img" alt="">
@@ -79,51 +79,12 @@
 
         <article class="work__card">
           <a href="#" target="_blank" class="work__link">
-            <h2 class="work__title">Restaurant Website</h2>
+            <h2 class="work__title">Keraton Website</h2>
             <p class="work__description">
-              Short description of the project that was carried out in this portofolio.
+              29/2/24 <br> becomes the front-end of the Keraton website
             </p>
 
-            <img src="../assets/images/work1.png" class="work__img" alt="">
-
-            <i class="ri-arrow-right-line"></i>
-          </a>
-        </article>
-
-        <article class="work__card">
-          <a href="#" target="_blank" class="work__link">
-            <h2 class="work__title">Restaurant Website</h2>
-            <p class="work__description">
-              Short description of the project that was carried out in this portofolio.
-            </p>
-
-            <img src="../assets/images/work1.png" class="work__img" alt="">
-
-            <i class="ri-arrow-right-line"></i>
-          </a>
-        </article>
-
-        <article class="work__card">
-          <a href="#" target="_blank" class="work__link">
-            <h2 class="work__title">Restaurant Website</h2>
-            <p class="work__description">
-              Short description of the project that was carried out in this portofolio.
-            </p>
-
-            <img src="../assets/images/work1.png" class="work__img" alt="">
-
-            <i class="ri-arrow-right-line"></i>
-          </a>
-        </article>
-
-        <article class="work__card">
-          <a href="#" target="_blank" class="work__link">
-            <h2 class="work__title">Restaurant Website</h2>
-            <p class="work__description">
-              Short description of the project that was carried out in this portofolio.
-            </p>
-
-            <img src="../assets/images/work1.png" class="work__img" alt="">
+            <img src="../assets/images/work2.png" class="work__img" alt="">
 
             <i class="ri-arrow-right-line"></i>
           </a>
@@ -139,8 +100,8 @@
           <div class="about__content">
             <h3 class="info__title">About Me</h3>
             <p class="about__description">
-              Passionate About Creating <b>Websites with beautiful interface</b>. I have years of experience in <b>Web
-                Development</b> with several projects completed.
+              Passionate About Creating Websites. I have months of experience as a <b>front-end developer</b> with
+              several completed projects.
             </p>
 
             <a href="../assets/text/CV_Fursan Nahr.pdf" download="" target="_blank"
@@ -156,37 +117,13 @@
 
           <div class="experience__content grid">
             <div class="experience__data grid">
-              <h2 class="experience__company grid">Discord</h2>
+              <h2 class="experience__company grid">PT. Curaweda</h2>
 
               <div>
-                <h3 class="experience__profession">Web Product Designer</h3>
-                <span class="experience__date">05/23 - Present</span>
+                <h3 class="experience__profession">Web Front-End</h3>
+                <span class="experience__date">02/24 - 06/24</span>
                 <p class="experience__description">
-                  Short description of the work you do or did in the company
-                </p>
-              </div>
-            </div>
-
-            <div class="experience__data grid">
-              <h2 class="experience__company grid">Google</h2>
-
-              <div>
-                <h3 class="experience__profession">Web Developer</h3>
-                <span class="experience__date">05/23 - Present</span>
-                <p class="experience__description">
-                  Short description of the work you do or did in the company
-                </p>
-              </div>
-            </div>
-
-            <div class="experience__data grid">
-              <h2 class="experience__company grid">Adobe</h2>
-
-              <div>
-                <h3 class="experience__profession">Web Designer</h3>
-                <span class="experience__date">05/23 - Present</span>
-                <p class="experience__description">
-                  Short description of the work you do or did in the company
+                  Become the front-end in creating Absensi SMK 4 and Keraton websites
                 </p>
               </div>
             </div>
@@ -232,7 +169,7 @@
       </div>
     </section>
 
-    <section class="services section" id="services">
+    <section class="services section" id="service">
       <h2 class="section__title">SERVICE</h2>
 
       <div class="services__container container grid">
@@ -240,33 +177,20 @@
         <article class="services__card">
           <i class="ri-code-box-line services__icon"></i>
 
-          <h3 class="services__title">Web Development</h3>
+          <h3 class="services__title">Front-End</h3>
           <p class="services__description">
-            Short description of the service offered to users
-            to obtain a personalized project.
+            Our front-end services are designed to build intuitive and interactive user interfaces, ensuring your projects look professional and functional.
           </p>
         </article>
 
         <article class="services__card">
           <i class="ri-layout-2-line services__icon"></i>
 
-          <h3 class="services__title">Responsive Web Design</h3>
+          <h3 class="services__title">Responsive Web</h3>
           <p class="services__description">
-            Short description of the service offered to users
-            to obtain a personalized project.
+            We offer responsive web development to ensure your site displays perfectly on all devices.
           </p>
         </article>
-
-        <article class="services__card">
-          <i class="ri-seo-line services__icon"></i>
-
-          <h3 class="services__title">Seo (Web Pages)</h3>
-          <p class="services__description">
-            Short description of the service offered to users
-            to obtain a personalized project.
-          </p>
-        </article>
-        
       </div>
     </section>
 
@@ -287,16 +211,47 @@
           <p class="contact__message" id="contact-message"></p>
         </form>
 
-        
+        <div class="contact__social grid">
+          <a href="https://www.instagram.com/fursannr_/" target="_blank" class="contact__social-link">
+            <i class="ri-instagram-line"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <ul class="footer__links">
+        <li>
+          <a href="#home" class="footer__link">Home</a>
+        </li>
+        <li>
+          <a href="#work" class="footer__link">Work</a>
+        </li>
+        <li>
+          <a href="#info" class="footer__link">Info</a>
+        </li>
+      </ul>
+
+      <span class="footer__copy">
+        &#169; All Rights Reserved By Ukur
+      </span>
+    </div>
+  </footer>
+
+  <!-- Scroll Up -->
+  <a href="#" :class="{ 'show-scroll': isShowScroll }" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+  </a>
 </template>
 <script>
 export default {
   data() {
     return {
       isBlurred: false,
+      isShowScroll: false,
     };
   },
   mounted() {
@@ -320,14 +275,37 @@ export default {
 
     // Add Blur Header
     window.addEventListener('scroll', this.blurHeader);
+    window.addEventListener('scroll', this.scrollActive); // Perbaikan: gunakan metode Vue
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.blurHeader);
+    window.removeEventListener('scroll', this.scrollActive);
   },
   methods: {
     blurHeader() {
       this.isBlurred = window.scrollY >= 50;
+      this.isShowScroll = window.scrollY >= 350;
     },
+    scrollActive() {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollDown = window.scrollY;
+      console.log('scrollActive called'); // Debugging: log ketika scrollActive dipanggil
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+          sectionTop = current.offsetTop - 58,
+          sectionId = current.getAttribute('id'),
+          sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+        console.log(`Checking section: ${sectionId}`); // Debugging: log setiap section
+
+        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+          console.log(`Adding active-link to: ${sectionId}`); // Debugging: log ketika menambahkan kelas
+          sectionsClass.classList.add('active-link');
+        } else {
+          console.log(`Removing active-link from: ${sectionId}`); // Debugging: log ketika menghapus kelas
+          sectionsClass.classList.remove('active-link');
+        }
+      });
+    }
   },
 };
 </script>
@@ -566,6 +544,15 @@ img {
   z-index: -1;
 }
 
+/* Active Link */
+.active-link {
+  color: var(--first-color-light);
+}
+
+.active-link::after {
+  width: 30%;
+}
+
 /* Home */
 .home__container {
   row-gap: 2rem;
@@ -750,6 +737,13 @@ img {
 .button:hover {
   background-color: var(--first-color-alt);
 }
+
+.work__img {
+  width: 444px;
+  height: 250px;
+  object-fit: cover
+}
+
 /* Experience */
 .experience__content {
   row-gap: 2rem;
@@ -804,17 +798,402 @@ img {
 .services {
   background-color: var(--container-color);
 }
+
 .services__container {
   row-gap: 2rem;
 }
+
 .services__icon {
   display: block;
   color: var(--first-color-light);
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
 .services__title {
   font-size: var(--h3-font-size);
   margin-bottom: 0.75rem
+}
+
+/* Contact */
+.contact__container {
+  row-gap: 4rem;
+}
+
+.contact__group,
+.contact__form {
+  gap: 1rem;
+}
+
+.contact__form {
+  position: relative;
+}
+
+.contact__input {
+  padding: 1.25rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.contact__input::placeholder {
+  color: var(--text-color-light);
+}
+
+.contact__area {
+  height: 10rem;
+  resize: none
+}
+
+.contact__button {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.contact__social {
+  grid-template-columns: repeat(1, max-content);
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.contact__social-link {
+  color: var(--title-color);
+  display: inline-flex;
+  column-gap: .25rem;
+  align-items: center;
+  transition: color .4s;
+}
+
+.contact__social-link i {
+  font-size: 1.5rem;
+}
+
+.contact__social-link span {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.contact__social-link:hover {
+  color: var(--first-color-light);
+}
+
+.contact__message {
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--container-color);
+}
+
+.footer__container {
+  padding-block: 3rem 2rem;
+  row-gap: 3rem;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.footer__link {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.footer__link:hover {
+  color: var(--first-color-light);
+}
+
+.footer__copy {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: hsl(var(--hue), 20%, 20%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--hue), 20%, 30%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--hue), 20%, 40%);
+}
+
+/* Scrorll Up */
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--container-color);
+  display: inline-flex;
+  padding: 6px;
+  color: var(--title-color);
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px hsla(var(--hue), 30% 8% .3);
+  z-index: var(--z-tooltip);
+  transition: bottom .4s, transform .4s;
+}
+
+.scrollup:hover {
+  transform: translateY(-.5rem);
+}
+
+/* Show scroll up */
+.show-scroll {
+  bottom: 3rem;
+}
+
+/* Breakpoints */
+/* For small device */
+@media screen and (max-width: 300px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .skills__content {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
+/* For medium device */
+@media screen and (min-width: 540px) {
+
+  .home__container,
+  .work__container,
+  .info__container,
+  .services__container,
+  .contact__container {
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__menu {
+    width: 50%;
+  }
+
+  .home__container {
+    grid-template-columns: repeat(2, 350px);
+  }
+
+  .home__data {
+    align-self: flex-end;
+    padding-bottom: 3rem;
+    order: -1;
+  }
+
+  .home__scroll {
+    grid-column: 1 / 3;
+  }
+
+  .work__container {
+    grid-template-columns: repeat(2, 350px)
+  }
+
+  .info__container {
+    grid-template-columns: initial;
+  }
+
+  .about {
+    grid-template-columns: repeat(2, 350px);
+    align-items: center;
+  }
+
+  .about__content {
+    order: 1;
+  }
+
+  .experience__data {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills__content {
+    grid-template-columns: repeat(5, max-content);
+    justify-content: initial;
+    column-gap: 4rem;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(2, 328px);
+  }
+}
+
+/* For Large Device */
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: 7rem 5rem;
+  }
+
+  .section__title {
+    margin-bottom: 4rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+  }
+
+  .nav__close,
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__menu {
+    width: initial;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+
+  .home__container {
+    grid-template-columns: 375px 350px;
+    gap: 3rem 16rem;
+  }
+
+  .home__img {
+    width: 350px;
+  }
+
+  .home__name {
+    margin-bottom: 1.5rem
+  }
+
+  .home__profession::after {
+    bottom: -1rem;
+    width: 35%;
+  }
+
+  .work__container {
+    grid-template-columns: repeat(2, 540px);
+    gap: 2.5rem;
+  }
+
+  .work__link {
+    padding: 3rem 3rem 2rem;
+  }
+
+  .work__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1rem;
+  }
+
+  .work__link i {
+    font-size: 2rem;
+  }
+
+  .info__container {
+    row-gap: 4rem;
+  }
+
+  .info__title {
+    font-size: var(--normal-font-size);
+    margin-bottom: 3.5rem;
+  }
+
+  .about {
+    grid-template-columns: 320px 420px;
+  }
+
+  .about__img {
+    width: 320px;
+  }
+
+  .about__description {
+    margin-bottom: 3rem;
+  }
+
+  .about__button {
+    width: initial;
+  }
+
+  .experience__content {
+    row-gap: 4rem;
+  }
+
+  .experience__data {
+    grid-template-columns: 320px 380px;
+    column-gap: 11.5rem;
+  }
+
+  .experience__company {
+    font-size: var(--h1-font-size);
+  }
+
+  .experience__profession {
+    margin-bottom: .5rem;
+  }
+
+  .experience__date {
+    font-size: var(--normal-font-size);
+  }
+
+  .skills__content {
+    grid-template-columns: repeat(6, max-content);
+  }
+
+  .services__container {
+    grid-template-columns: repeat(2, 350px);
+    gap: 6rem 13rem;
+  }
+
+  .services__icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__container {
+    grid-template-columns: 580px;
+  }
+
+  .contact__group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact__area {
+    height: 15rem;
+  }
+
+  .contact__button {
+    width: max-content;
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
+
+  .contact__message {
+    bottom: 4.5rem
+  }
+
+  .footer__container {
+    padding-block: 3rem;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+
+  .footer__links {
+    column-gap: 4rem;
+    order: 1;
+  }
+
+  .scrollup {
+    right: 3rem;
+  }
 }
 </style>
