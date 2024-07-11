@@ -155,7 +155,7 @@
             </div>
 
             <div class="skills__box">
-              <img src="../assets/images/vue.png" alt="" class="skills__img">
+              <img src="../assets/images/Vue.png" alt="" class="skills__img">
               <span class="skills__name">Vue JS</span>
             </div>
 
