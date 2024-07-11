@@ -150,7 +150,7 @@
             </div>
 
             <div class="skills__box">
-              <img src="../assets/images/bootstrap.png" alt="" class="skills__img">
+              <img src="../assets/images/Bootstrap.png" alt="" class="skills__img">
               <span class="skills__name">Bootstrap</span>
             </div>
 
