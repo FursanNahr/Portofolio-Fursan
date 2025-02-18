@@ -11,19 +11,19 @@
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li>
-            <a href="#home" class="nav__link">Home</a>
+            <a href="#home" class="nav__link">Beranda</a>
           </li>
           <li>
-            <a href="#work" class="nav__link">Work</a>
+            <a href="#work" class="nav__link">Pekerjaan</a>
           </li>
           <li>
-            <a href="#info" class="nav__link">Info</a>
+            <a href="#info" class="nav__link">Informasi</a>
           </li>
           <li>
-            <a href="#service" class="nav__link">Services</a>
+            <a href="#service" class="nav__link">Layanan</a>
           </li>
           <li>
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#contact" class="nav__link">Kontak</a>
           </li>
         </ul>
 
@@ -54,21 +54,21 @@
             <i class="ri-arrow-down-line"></i>
           </div>
 
-          <span class="home__scroll-text">Recent Works</span>
+          <span class="home__scroll-text">Pekerjaan Terbaru</span>
         </a>
       </div>
     </section>
 
     <section class="work section" id="work">
       <h2 class="section__title">
-        RECENT WORK
+        PEKERJAAN TERBARU
       </h2>
       <div class="work__container container grid">
         <article class="work__card">
           <a href="https://ajibtest.online/" target="_blank" class="work__link">
-            <h2 class="work__title">Absensi SMK 4 Website</h2>
+            <h2 class="work__title">Website Absensi SMK 4</h2>
             <p class="work__description">
-              29/2/24 <br> becomes the front-end of the Absensi SMK 4 website
+              29/2/24 <br> menjadi Front-end untuk website Absensi SMK 4
             </p>
 
             <img src="../assets/images/work1.png" class="work__img" alt="">
@@ -79,10 +79,10 @@
 
         <article class="work__card">
           <a href="#" target="_blank" class="work__link">
-            <h2 class="work__title">Keraton Website</h2>
+            <h2 class="work__title">Website Keraton</h2>
             <p class="work__description">
-              29/2/24 <br> becomes the front-end of the Keraton website
-            </p>
+              29/2/24 <br> menjadi front-end untuk website Keraton
+            </p>            
 
             <img src="../assets/images/work2.png" class="work__img" alt="">
 
@@ -92,20 +92,20 @@
       </div>
     </section>
     <section class="info section" id="info">
-      <h2 class="section__title">MY INFO</h2>
+      <h2 class="section__title">TENTANG SAYA</h2>
 
       <div class="info__container container grid">
-        <!-- ABOUT -->
+        <!-- TENTANG -->
         <div class="about grid">
           <div class="about__content">
-            <h3 class="info__title">About Me</h3>
+            <h3 class="info__title">Tentang Saya</h3>
             <p class="about__description">
-              Passionate About Creating Websites. I have months of experience as a <b>front-end developer</b> with
-              several completed projects.
+              Bersemangat dalam Membuat Website. Saya memiliki pengalaman beberapa tahun sebagai  
+              <b>front-end developer</b> dengan beberapa proyek yang telah diselesaikan.
             </p>
 
             <a href="../assets/text/CV_Fursan Nahr.pdf" download="" target="_blank"
-              class="button about__button">Download CV</a>
+              class="button about__button">Unduh CV</a>
           </div>
 
           <img src="../assets/images/fotoukur.png" alt="" class="about__img">
@@ -113,104 +113,107 @@
 
         <!-- Experience -->
         <div class="experience">
-          <h3 class="info__title">Experience</h3>
-
+          <h3 class="info__title">Pengalaman</h3>
+        
           <div class="experience__content grid">
             <div class="experience__data grid">
               <h2 class="experience__company grid">PT. Curaweda</h2>
-
+        
               <div>
                 <h3 class="experience__profession">Web Front-End</h3>
                 <span class="experience__date">02/24 - 06/24</span>
                 <p class="experience__description">
-                  Become the front-end in creating Absensi SMK 4 and Keraton websites
+                  Menjadi front-end dalam pembuatan website Absensi SMK 4 dan Keraton
                 </p>
               </div>
             </div>
           </div>
         </div>
+        
 
         <div class="skills">
-          <h3 class="info__title">Skills</h3>
-
+          <h3 class="info__title">Keahlian</h3>
+        
           <div class="skills__content grid">
-
+        
             <div class="skills__box">
               <img src="../assets/images/HTML-5-Badge-Logo.png" alt="" class="skills__img">
               <span class="skills__name">HTML</span>
             </div>
-
+        
             <div class="skills__box">
               <img src="../assets/images/css.png" alt="" class="skills__img">
               <span class="skills__name">CSS</span>
             </div>
+        
             <div class="skills__box">
               <img src="../assets/images/scss.png" alt="" class="skills__img">
               <span class="skills__name">SCSS</span>
             </div>
-
+        
             <div class="skills__box">
               <img src="../assets/images/Bootstrap.png" alt="" class="skills__img">
               <span class="skills__name">Bootstrap</span>
             </div>
-
+        
             <div class="skills__box">
               <img src="../assets/images/Vue.png" alt="" class="skills__img">
               <span class="skills__name">Vue JS</span>
             </div>
-
+        
             <div class="skills__box">
               <img src="../assets/images/github.png" alt="" class="skills__img">
               <span class="skills__name">Github</span>
             </div>
-
+        
           </div>
-        </div>
+        </div>        
       </div>
     </section>
 
     <section class="services section" id="service">
-      <h2 class="section__title">SERVICE</h2>
-
+      <h2 class="section__title">LAYANAN</h2>
+    
       <div class="services__container container grid">
-
+    
         <article class="services__card">
           <i class="ri-code-box-line services__icon"></i>
-
+    
           <h3 class="services__title">Front-End</h3>
           <p class="services__description">
-            Our front-end services are designed to build intuitive and interactive user interfaces, ensuring your projects look professional and functional.
+            Layanan front-end kami dirancang untuk membangun antarmuka pengguna yang intuitif dan interaktif, 
+            memastikan proyek Anda terlihat profesional dan berfungsi dengan baik.
           </p>
         </article>
-
+    
         <article class="services__card">
           <i class="ri-layout-2-line services__icon"></i>
-
-          <h3 class="services__title">Responsive Web</h3>
+    
+          <h3 class="services__title">Web Responsif</h3>
           <p class="services__description">
-            We offer responsive web development to ensure your site displays perfectly on all devices.
+            Kami menawarkan pengembangan web responsif untuk memastikan situs Anda tampil sempurna di semua perangkat.
           </p>
         </article>
       </div>
     </section>
-
+    
     <section class="contact section" id="contact">
-      <h2 class="section__title">CONTACT ME</h2>
-
+      <h2 class="section__title">HUBUNGI SAYA</h2>
+    
       <div class="contact__container container grid">
         <form action="" class="contact__form grid" id="contact-form">
           <div class="contact__group grid">
-            <input type="text" placeholder="Names" required class="contact__input" name="" id="">
+            <input type="text" placeholder="Nama" required class="contact__input" name="" id="">
             <input type="email" placeholder="Email" required class="contact__input" name="" id="">
           </div>
-
-          <textarea name="" placeholder="Message" required class="contact__input contact__area" id=""></textarea>
-
-          <button type="submit" class="button contact__button">Send Messages</button>
-
+    
+          <textarea name="" placeholder="Pesan" required class="contact__input contact__area" id=""></textarea>
+    
+          <button type="submit" class="button contact__button">Kirim Pesan</button>
+    
           <p class="contact__message" id="contact-message"></p>
         </form>
-
+    
         <div class="contact__social grid">
           <a href="https://www.instagram.com/fursannr_/" target="_blank" class="contact__social-link">
             <i class="ri-instagram-line"></i>
@@ -218,96 +221,97 @@
           </a>
         </div>
       </div>
-    </section>
+    </section>    
   </main>
 
   <footer class="footer">
     <div class="footer__container container grid">
       <ul class="footer__links">
         <li>
-          <a href="#home" class="footer__link">Home</a>
+          <a href="#home" class="footer__link">Beranda</a>
         </li>
         <li>
-          <a href="#work" class="footer__link">Work</a>
+          <a href="#work" class="footer__link">Pekerjaan</a>
         </li>
         <li>
           <a href="#info" class="footer__link">Info</a>
         </li>
       </ul>
-
+  
       <span class="footer__copy">
-        &#169; All Rights Reserved By Ukur
+        &#169; Seluruh Hak Cipta Dilindungi oleh Ukur
       </span>
     </div>
-  </footer>
+  </footer>  
 
   <!-- Scroll Up -->
   <a href="#" :class="{ 'show-scroll': isShowScroll }" class="scrollup" id="scroll-up">
     <i class="ri-arrow-up-line"></i>
   </a>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      isBlurred: false,
-      isShowScroll: false,
-    };
-  },
-  mounted() {
-    const navMenu = document.getElementById('nav-menu');
-    const navToggle = document.getElementById('nav-toggle');
-    const navClose = document.getElementById('nav-close');
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-    // Show Menu
-    if (navToggle) {
-      navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
-      });
-    }
+const isBlurred = ref(false);
+const isShowScroll = ref(false);
 
-    // Close Menu
-    if (navClose) {
-      navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-      });
-    }
+// Methods
+const blurHeader = () => {
+  isBlurred.value = window.scrollY >= 50;
+  isShowScroll.value = window.scrollY >= 350;
+};
 
-    // Add Blur Header
-    window.addEventListener('scroll', this.blurHeader);
-    window.addEventListener('scroll', this.scrollActive); // Perbaikan: gunakan metode Vue
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.blurHeader);
-    window.removeEventListener('scroll', this.scrollActive);
-  },
-  methods: {
-    blurHeader() {
-      this.isBlurred = window.scrollY >= 50;
-      this.isShowScroll = window.scrollY >= 350;
-    },
-    scrollActive() {
-      const sections = document.querySelectorAll('section[id]');
-      const scrollDown = window.scrollY;
-      console.log('scrollActive called'); // Debugging: log ketika scrollActive dipanggil
-      sections.forEach(current => {
-        const sectionHeight = current.offsetHeight,
+const scrollActive = () => {
+  const sections = document.querySelectorAll('section[id]');
+  const scrollDown = window.scrollY;
+  console.log('scrollActive called'); // Debugging: log ketika scrollActive dipanggil
+  
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight,
           sectionTop = current.offsetTop - 58,
           sectionId = current.getAttribute('id'),
           sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
-        console.log(`Checking section: ${sectionId}`); // Debugging: log setiap section
+    console.log(`Checking section: ${sectionId}`); // Debugging: log setiap section
 
-        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
-          console.log(`Adding active-link to: ${sectionId}`); // Debugging: log ketika menambahkan kelas
-          sectionsClass.classList.add('active-link');
-        } else {
-          console.log(`Removing active-link from: ${sectionId}`); // Debugging: log ketika menghapus kelas
-          sectionsClass.classList.remove('active-link');
-        }
-      });
+    if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+      console.log(`Adding active-link to: ${sectionId}`); // Debugging: log ketika menambahkan kelas
+      sectionsClass.classList.add('active-link');
+    } else {
+      console.log(`Removing active-link from: ${sectionId}`); // Debugging: log ketika menghapus kelas
+      sectionsClass.classList.remove('active-link');
     }
-  },
+  });
 };
+
+// Lifecycle hooks
+onMounted(() => {
+  const navMenu = document.getElementById('nav-menu');
+  const navToggle = document.getElementById('nav-toggle');
+  const navClose = document.getElementById('nav-close');
+
+  // Show Menu
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.add('show-menu');
+    });
+  }
+
+  // Close Menu
+  if (navClose) {
+    navClose.addEventListener('click', () => {
+      navMenu.classList.remove('show-menu');
+    });
+  }
+
+  // Add Blur Header and Scroll Active listeners
+  window.addEventListener('scroll', blurHeader);
+  window.addEventListener('scroll', scrollActive);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', blurHeader);
+  window.removeEventListener('scroll', scrollActive);
+});
 </script>
 
 <style>
