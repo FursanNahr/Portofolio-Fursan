@@ -82,7 +82,7 @@
             <h2 class="work__title">Website Keraton</h2>
             <p class="work__description">
               29/2/24 <br> menjadi front-end untuk website Keraton
-            </p>            
+            </p>
 
             <img src="../assets/images/work2.png" class="work__img" alt="">
 
@@ -100,12 +100,11 @@
           <div class="about__content">
             <h3 class="info__title">Tentang Saya</h3>
             <p class="about__description">
-              Bersemangat dalam Membuat Website. Saya memiliki pengalaman beberapa tahun sebagai  
+              Bersemangat dalam Membuat Website. Saya memiliki pengalaman beberapa tahun sebagai
               <b>front-end developer</b> dengan beberapa proyek yang telah diselesaikan.
             </p>
 
-            <a href="../assets/text/CV_Fursan Nahr.pdf" download="" target="_blank"
-              class="button about__button">Unduh CV</a>
+            <button @click="downloadCV" class="button about__button">Unduh CV</button>
           </div>
 
           <img src="../assets/images/fotoukur.png" alt="" class="about__img">
@@ -114,11 +113,11 @@
         <!-- Experience -->
         <div class="experience">
           <h3 class="info__title">Pengalaman</h3>
-        
+
           <div class="experience__content grid">
             <div class="experience__data grid">
               <h2 class="experience__company grid">PT. Curaweda</h2>
-        
+
               <div>
                 <h3 class="experience__profession">Web Front-End</h3>
                 <span class="experience__date">02/24 - 06/24</span>
@@ -129,66 +128,101 @@
             </div>
           </div>
         </div>
-        
+
 
         <div class="skills">
           <h3 class="info__title">Keahlian</h3>
-        
-          <div class="skills__content grid">
-        
-            <div class="skills__box">
-              <img src="../assets/images/HTML-5-Badge-Logo.png" alt="" class="skills__img">
-              <span class="skills__name">HTML</span>
+
+          <div class="skills">
+            <h3 class="info__title">Keahlian</h3>
+            <!-- Highlight Box -->
+            <div id="highlightBox" class="highlight">
+              <p id="highlightText">Klik ikon untuk melihat detail keahlian</p>
             </div>
-        
-            <div class="skills__box">
-              <img src="../assets/images/css.png" alt="" class="skills__img">
-              <span class="skills__name">CSS</span>
+            <div class="skills__content grid">
+              <div class="skills__box"
+                data-skill="HTML (Mahir) - Menguasai pembuatan struktur halaman web yang rapi, efisien, dan sesuai standar dengan elemen semantik.">
+                <img src="../assets/images/HTML-5-Badge-Logo.png" alt="" class="skills__img">
+                <span class="skills__name">HTML</span>
+              </div>
+
+              <div class="skills__box"
+                data-skill="CSS (Mahir) - Menguasai styling halaman web dengan CSS modern, mencakup desain responsif, animasi, fleksibilitas layout, serta optimasi untuk berbagai perangkat dan browser.">
+                <img src="../assets/images/css.png" alt="" class="skills__img">
+                <span class="skills__name">CSS</span>
+              </div>
+
+              <div class="skills__box"
+                data-skill="Vue js (Ahli) - Menguasai framework Vue.js dengan keahlian tingkat tinggi, mampu merancang dan mengembangkan aplikasi web yang kompleks dan scalable, mengoptimalkan state management, serta menerapkan best practices dalam setiap aspek pengembangan front-end.">
+                <img src="../assets/images/Vue.png" alt="" class="skills__img">
+                <span class="skills__name">Vue JS</span>
+              </div>
+
+              <div class="skills__box"
+                data-skill="React (Ahli) - Menguasai secara mendalam pengembangan aplikasi web dengan React, mampu merancang arsitektur komponen yang kompleks, mengoptimalkan performa melalui advanced hooks dan teknik state management, serta menerapkan best practices untuk membangun UI interaktif dan scalable">
+                <img src="../assets/images/react.png" alt="" class="skills__img">
+                <span class="skills__name">React</span>
+              </div>
+              <div class="skills__box"
+                data-skill="JavaScript (Mahir) - Menguasai bahasa pemrograman JavaScript secara menyeluruh, mampu menerapkan konsep-konsep ES6+, asynchronous programming, dan manipulasi DOM untuk membangun aplikasi web interaktif dan dinamis.">
+                <img src="../assets/images/javascript.png" alt="" class="skills__img">
+                <span class="skills__name">JavaScript</span>
+              </div>
+              <div class="skills__box"
+                data-skill="TypeScript (Menengah) - Mampu menggunakan TypeScript untuk menambah kejelasan dan keamanan kode, serta mengintegrasikannya dalam proyek pengembangan aplikasi web dengan pemahaman yang baik tentang konsep-konsep dasar dan lanjutan.">
+                <img src="../assets/images/typescript.png" alt="" class="skills__img">
+                <span class="skills__name">TypeScript</span>
+              </div>
+
+              <div class="skills__box"
+                data-skill="GitHub (Mahir) - Menguasai penggunaan GitHub untuk kolaborasi, version control, dan integrasi dengan workflow pengembangan modern, serta familiar dengan berbagai fitur seperti pull request, issue tracking, dan GitHub Actions.">
+                <img src="../assets/images/github.png" alt="" class="skills__img">
+                <span class="skills__name">GitHub</span>
+              </div>
+
+              <div class="skills__box"
+                data-skill="Tailwind (Ahli) - Menguasai penggunaan Tailwind CSS secara mendalam, mampu membangun antarmuka yang responsif dan estetis dengan utility-first approach, serta mengoptimalkan workflow styling melalui custom configuration dan integrasi yang efisien dalam proyek pengembangan modern.">
+                <img src="../assets/images/tailwind.png" alt="" class="skills__img">
+                <span class="skills__name">Tailwind</span>
+              </div>
+              <div class="skills__box"
+                data-skill="SCSS (Mahir) - Menguasai penulisan gaya dengan SCSS, termasuk penggunaan variabel, nested rules, mixins, inheritance, dan optimasi kode untuk meningkatkan efisiensi serta maintainability.">
+                <img src="../assets/images/scss.png" alt="" class="skills__img">
+                <span class="skills__name">SCSS</span>
+              </div>
+
+              <div class="skills__box"
+                data-skill="Bootstrap (Menengah) - Mampu membangun tampilan responsif dengan komponen dan grid system Bootstrap, serta menyesuaikan styling menggunakan custom CSS atau SCSS.">
+                <img src="../assets/images/Bootstrap.png" alt="" class="skills__img">
+                <span class="skills__name">Bootstrap</span>
+              </div>
+
+
             </div>
-        
-            <div class="skills__box">
-              <img src="../assets/images/scss.png" alt="" class="skills__img">
-              <span class="skills__name">SCSS</span>
-            </div>
-        
-            <div class="skills__box">
-              <img src="../assets/images/Bootstrap.png" alt="" class="skills__img">
-              <span class="skills__name">Bootstrap</span>
-            </div>
-        
-            <div class="skills__box">
-              <img src="../assets/images/Vue.png" alt="" class="skills__img">
-              <span class="skills__name">Vue JS</span>
-            </div>
-        
-            <div class="skills__box">
-              <img src="../assets/images/github.png" alt="" class="skills__img">
-              <span class="skills__name">Github</span>
-            </div>
-        
           </div>
-        </div>        
+
+        </div>
       </div>
     </section>
 
     <section class="services section" id="service">
       <h2 class="section__title">LAYANAN</h2>
-    
+
       <div class="services__container container grid">
-    
+
         <article class="services__card">
           <i class="ri-code-box-line services__icon"></i>
-    
+
           <h3 class="services__title">Front-End</h3>
           <p class="services__description">
-            Layanan front-end kami dirancang untuk membangun antarmuka pengguna yang intuitif dan interaktif, 
+            Layanan front-end kami dirancang untuk membangun antarmuka pengguna yang intuitif dan interaktif,
             memastikan proyek Anda terlihat profesional dan berfungsi dengan baik.
           </p>
         </article>
-    
+
         <article class="services__card">
           <i class="ri-layout-2-line services__icon"></i>
-    
+
           <h3 class="services__title">Web Responsif</h3>
           <p class="services__description">
             Kami menawarkan pengembangan web responsif untuk memastikan situs Anda tampil sempurna di semua perangkat.
@@ -196,24 +230,24 @@
         </article>
       </div>
     </section>
-    
+
     <section class="contact section" id="contact">
       <h2 class="section__title">HUBUNGI SAYA</h2>
-    
+
       <div class="contact__container container grid">
         <form action="" class="contact__form grid" id="contact-form">
           <div class="contact__group grid">
             <input type="text" placeholder="Nama" required class="contact__input" name="" id="">
             <input type="email" placeholder="Email" required class="contact__input" name="" id="">
           </div>
-    
+
           <textarea name="" placeholder="Pesan" required class="contact__input contact__area" id=""></textarea>
-    
+
           <button type="submit" class="button contact__button">Kirim Pesan</button>
-    
+
           <p class="contact__message" id="contact-message"></p>
         </form>
-    
+
         <div class="contact__social grid">
           <a href="https://www.instagram.com/fursannr_/" target="_blank" class="contact__social-link">
             <i class="ri-instagram-line"></i>
@@ -221,7 +255,7 @@
           </a>
         </div>
       </div>
-    </section>    
+    </section>
   </main>
 
   <footer class="footer">
@@ -237,12 +271,12 @@
           <a href="#info" class="footer__link">Info</a>
         </li>
       </ul>
-  
+
       <span class="footer__copy">
         &#169; Seluruh Hak Cipta Dilindungi oleh Ukur
       </span>
     </div>
-  </footer>  
+  </footer>
 
   <!-- Scroll Up -->
   <a href="#" :class="{ 'show-scroll': isShowScroll }" class="scrollup" id="scroll-up">
@@ -255,6 +289,55 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 const isBlurred = ref(false);
 const isShowScroll = ref(false);
 
+const downloadCV = () => {
+  // Path ke file PDF
+  const fileUrl = '../assets/text/cvFursan.pdf';
+  
+  fetch(fileUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.blob();
+    })
+    .then(blob => {
+      // Buat URL object untuk blob
+      const url = window.URL.createObjectURL(blob);
+      
+      // Buat elemen <a> secara programatis
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'cvFursan.pdf');
+      
+      // Append ke body, klik, lalu hapus
+      document.body.appendChild(link);
+      link.click();
+      
+      // Clean up
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(link);
+    })
+    .catch(error => {
+      console.error('Error downloading file:', error);
+      alert('Gagal mengunduh file. Silakan coba lagi nanti.');
+    });
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  const skillBoxes = document.querySelectorAll(".skills__box");
+  const highlightBox = document.getElementById("highlightBox");
+  const highlightText = document.getElementById("highlightText");
+
+  skillBoxes.forEach(box => {
+    box.addEventListener("click", function () {
+      const skillInfo = this.getAttribute("data-skill");
+      highlightText.textContent = skillInfo;
+      highlightBox.style.display = "block";
+    });
+  });
+});
+
+
 // Methods
 const blurHeader = () => {
   isBlurred.value = window.scrollY >= 50;
@@ -265,12 +348,12 @@ const scrollActive = () => {
   const sections = document.querySelectorAll('section[id]');
   const scrollDown = window.scrollY;
   console.log('scrollActive called'); // Debugging: log ketika scrollActive dipanggil
-  
+
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight,
-          sectionTop = current.offsetTop - 58,
-          sectionId = current.getAttribute('id'),
-          sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute('id'),
+      sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
     console.log(`Checking section: ${sectionId}`); // Debugging: log setiap section
 
     if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
@@ -796,6 +879,20 @@ img {
 
 .skills__box:hover {
   transform: translateY(-.25rem);
+}
+
+/* Highlight Box */
+.highlight {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f4f4f4;
+  border-left: 5px solid #007bff;
+  font-weight: bold;
+  color: var(--container-color);
+  ;
+  display: none;
+  margin-bottom: 10px;
+  /* Sembunyikan awalnya */
 }
 
 /* Services */
