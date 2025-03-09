@@ -235,17 +235,19 @@
       <h2 class="section__title">HUBUNGI SAYA</h2>
 
       <div class="contact__container container grid">
-        <form action="" class="contact__form grid" id="contact-form">
+        <form @submit="sendEmail" class="contact__form grid" id="contact-form">
           <div class="contact__group grid">
-            <input type="text" placeholder="Nama" required class="contact__input" name="" id="">
-            <input type="email" placeholder="Email" required class="contact__input" name="" id="">
+            <input type="text" placeholder="Nama" required class="contact__input">
+            <input type="email" placeholder="Email" required class="contact__input">
           </div>
 
-          <textarea name="" placeholder="Pesan" required class="contact__input contact__area" id=""></textarea>
+          <textarea placeholder="Pesan" required class="contact__input contact__area"></textarea>
 
-          <button type="submit" class="button contact__button">Kirim Pesan</button>
+          <button type="submit" class="button contact__button" :disabled="isLoading">
+            {{ isLoading ? 'Mengirim...' : 'Kirim Pesan' }}
+          </button>
 
-          <p class="contact__message" id="contact-message"></p>
+          <p class="contact__message" id="contact-message">{{ contactMessage }}</p>
         </form>
 
         <div class="contact__social grid">
@@ -292,7 +294,7 @@ const isShowScroll = ref(false);
 const downloadCV = () => {
   // Path ke file PDF
   const fileUrl = '../assets/text/cvFursan.pdf';
-  
+
   fetch(fileUrl)
     .then(response => {
       if (!response.ok) {
@@ -303,16 +305,16 @@ const downloadCV = () => {
     .then(blob => {
       // Buat URL object untuk blob
       const url = window.URL.createObjectURL(blob);
-      
+
       // Buat elemen <a> secara programatis
       const link = document.createElement('a');
       link.href = url;
       link.setAttribute('download', 'cvFursan.pdf');
-      
+
       // Append ke body, klik, lalu hapus
       document.body.appendChild(link);
       link.click();
-      
+
       // Clean up
       window.URL.revokeObjectURL(url);
       document.body.removeChild(link);
@@ -395,6 +397,62 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', blurHeader);
   window.removeEventListener('scroll', scrollActive);
 });
+
+import emailjs from '@emailjs/browser';
+
+// Referensi untuk pesan notifikasi
+const contactMessage = ref('');
+const isLoading = ref(false);
+
+// Fungsi untuk mengirim email
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  // Mengambil data formulir
+  const form = e.target;
+  const name = form.querySelector('input[type="text"]').value;
+  const email = form.querySelector('input[type="email"]').value;
+  const message = form.querySelector('textarea').value;
+
+  // Menampilkan loading state
+  isLoading.value = true;
+  contactMessage.value = 'Mengirim pesan...';
+
+  // Menyiapkan parameter untuk EmailJS
+  const templateParams = {
+    to_email: 'fursan10nahr@gmail.com',
+    from_name: name,
+    from_email: email,
+    message: message
+  };
+
+  // Ganti dengan SERVICE_ID, TEMPLATE_ID, dan PUBLIC_KEY Anda dari EmailJS
+  emailjs.send(
+    'service_dles983',
+    'template_3v4apga',
+    templateParams,
+    'NV4Noz2_4ECFB0NeY'
+  )
+    .then(() => {
+      // Sukses mengirim email
+      contactMessage.value = 'Pesan terkirim ✅';
+
+      // Reset formulir
+      form.reset();
+
+      // Hapus pesan sukses setelah 5 detik
+      setTimeout(() => {
+        contactMessage.value = '';
+        isLoading.value = false;
+      }, 5000);
+    })
+    .catch((error) => {
+      // Gagal mengirim email
+      console.error('FAILED...', error);
+      contactMessage.value = 'Gagal mengirim pesan ❌';
+      isLoading.value = false;
+    });
+};
 </script>
 
 <style>
