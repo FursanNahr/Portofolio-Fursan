@@ -129,10 +129,6 @@
           </div>
         </div>
 
-
-        <div class="skills">
-          <h3 class="info__title">Keahlian</h3>
-
           <div class="skills">
             <h3 class="info__title">Keahlian</h3>
             <!-- Highlight Box -->
@@ -200,8 +196,6 @@
 
             </div>
           </div>
-
-        </div>
       </div>
     </section>
 
